@@ -1,5 +1,9 @@
 import { NativeModules, Platform } from 'react-native';
 
+import {default as useAuth0} from './hooks/use-auth0';
+import {default as Auth0Provider} from './hooks/auth0-provider';
+import {TimeoutError} from './utils/fetchWithTimeout';
+
 const LINKING_ERROR =
   `The package 'react-native-authzero' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
@@ -21,13 +25,10 @@ function multiply(a: number, b: number): Promise<number> {
   return Authzero.multiply(a, b);
 }
 
-import {default as useAuth0} from './hooks/use-auth0';
-
 export default {
   multiply,
   useAuth0,
-}
-/*
+  Auth0Provider,
+  TimeoutError,
+};
 
-import Auth0 from './auth0';
-*/
