@@ -1,3 +1,5 @@
+import Auth0
+
 @objc(Authzero)
 class Authzero: NSObject {
 
@@ -6,9 +8,8 @@ class Authzero: NSObject {
     resolve(a*b)
   }
 
-  @objc(logout:withResolver:)
-  func logout(resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-    // do stuff here
-      resolve("Hello")
-    }
+  @objc func logout(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
+    resolve("done")
+  }
+
 }
