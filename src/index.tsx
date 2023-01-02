@@ -17,6 +17,17 @@ const Authzero = NativeModules.Authzero
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
+function multiply(a: number, b: number): Promise<number> {
   return Authzero.multiply(a, b);
 }
+
+import {default as useAuth0} from './hooks/use-auth0';
+
+export default {
+  multiply,
+  useAuth0,
+}
+/*
+
+import Auth0 from './auth0';
+*/

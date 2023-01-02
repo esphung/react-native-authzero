@@ -1,10 +1,19 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-authzero';
+import Auth0 from 'react-native-authzero';
+console.log({Auth0})
+const {multiply, useAuth0}= Auth0
+
+multiply(3,4).then((product)=> {
+  console.log(product)
+})
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
+  const useAuth0Methods = useAuth0()
+  console.debug("useAuth0Methods:", useAuth0Methods);
+
 
   React.useEffect(() => {
     multiply(3, 7).then(setResult);

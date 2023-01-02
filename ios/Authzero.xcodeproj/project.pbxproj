@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* Authzero.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Authzero.m */; };
-		F4FF95D7245B92E800C19C63 /*  Authzero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  Authzero.swift */; };
+		0FCD6AFA2962541A005938B2 /* A0Auth0.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD6AF72962541A005938B2 /* A0Auth0.m */; };
+		0FCD6AFB2962541A005938B2 /* CredentialsManagerBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD6AF82962541A005938B2 /* CredentialsManagerBridge.swift */; };
+		F4FF95D7245B92E800C19C63 /* Authzero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* Authzero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0FCD6AF72962541A005938B2 /* A0Auth0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A0Auth0.m; sourceTree = "<group>"; };
+		0FCD6AF82962541A005938B2 /* CredentialsManagerBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsManagerBridge.swift; sourceTree = "<group>"; };
+		0FCD6AF92962541A005938B2 /* A0Auth0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A0Auth0.h; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libAuthzero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAuthzero.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5891CC2AC0600A0062D /* Authzero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Authzero.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* Authzero-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authzero-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -55,6 +59,9 @@
 				F4FF95D6245B92E800C19C63 /* Authzero.swift */,
 				B3E7B5891CC2AC0600A0062D /* Authzero.m */,
 				F4FF95D5245B92E700C19C63 /* Authzero-Bridging-Header.h */,
+				0FCD6AF92962541A005938B2 /* A0Auth0.h */,
+				0FCD6AF72962541A005938B2 /* A0Auth0.m */,
+				0FCD6AF82962541A005938B2 /* CredentialsManagerBridge.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +124,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FF95D7245B92E800C19C63 /* Authzero.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* Authzero.m in Sources */,
+				0FCD6AFB2962541A005938B2 /* CredentialsManagerBridge.swift in Sources */,
+				0FCD6AFA2962541A005938B2 /* A0Auth0.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
