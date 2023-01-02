@@ -26,7 +26,7 @@ function multiply(a: number, b: number): Promise<number> {
 }
 
 export default {
-  multiply,
+  ...Authzero,
   useAuth0,
   Auth0Provider,
   TimeoutError,

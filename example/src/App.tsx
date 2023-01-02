@@ -3,7 +3,7 @@ import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import Auth0 from 'react-native-authzero';
 console.log({Auth0})
-const {multiply, useAuth0}= Auth0
+const {logout, multiply, useAuth0}= Auth0
 
 multiply(3,4).then((product)=> {
   console.log(product)
@@ -17,6 +17,8 @@ export default function App() {
 
   React.useEffect(() => {
     multiply(3, 7).then(setResult);
+    console.log({logout})
+   // logout().then(logoutResp => { console.log({logoutResp})})
   }, []);
 
   return (
